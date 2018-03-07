@@ -4,8 +4,8 @@ use \Psr\Http\Message\ResponseInterface as Response;
 
 $app = new \Slim\App;
 
-//Todo API
-//require '../src/Todo/todolist.php';
+//Member API
+require '../src/Member/member.php';
 
 if (isset($_SERVER['HTTP_ORIGIN'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
