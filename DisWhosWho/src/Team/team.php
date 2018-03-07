@@ -3,6 +3,11 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 $app = new \Slim\App;
 
+
+//Project API
+require '../src/Project/project.php';
+
+
 //Add New Team
 $app->post('/api/team/add', function (Request $request, Response $response) {
 
