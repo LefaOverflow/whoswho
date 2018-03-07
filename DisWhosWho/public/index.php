@@ -10,10 +10,10 @@ require '../src/Authentication/db.php';
 $app = new \Slim\App;
 
 //Authentication API
-require '../src/User/auth.php';
+require '../src/Admin/auth.php';
 
-//Todo API
-//require '../src/Todo/todolist.php';
+//Member API
+//require '../src/Member/member.php';
 
 
 $app->run();
