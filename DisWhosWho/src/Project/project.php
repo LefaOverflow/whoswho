@@ -3,6 +3,8 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 $app = new \Slim\App;
 
+//Search API
+require '../src/Search/search.php';
 
 //Add New Project
 $app->post('/api/project/add', function (Request $request, Response $response) {
